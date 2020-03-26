@@ -27,6 +27,7 @@ export default {
   watch: {
       value: function(newVal) {
           this.isValid = newVal !== ''
+          this.hasErrors = !this.isValid
       }
   },
   data() {

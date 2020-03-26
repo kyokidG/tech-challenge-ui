@@ -6,3 +6,6 @@
     --white: white;
     --primary-color-focus: #94ffa4;
 }
+
+/* fonts, spacing and any other styling constants can also be stored as variables if the project requires */
+/* for larger projects, I am usially using SCSS variables and a pre-processor to generate most of utility classes, but adding so much tooling for one page on this project is an overkill */

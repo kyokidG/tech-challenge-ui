@@ -2,10 +2,11 @@
   <div class="register-page">
     <div class="register-modal-container flex flex-column justify-between">
       <div class="modal-header text-center">
+        <img src="@/assets/chevron-left-white.png" class="back-btn" width="30" height="30">
         <h1>Register</h1>
         <p class="info-text">Please finalise your registration before you can proceed</p>
       </div>
-      <div class="modal-body flex justify-between">
+      <div class="modal-body flex justify-between pb-1">
         <div class="column mx-1">
           <div class="row multiple w-100">
             <g-input label="First name" id="fname" class="mr-1"></g-input>
@@ -72,6 +73,7 @@ export default {
 </script>
 <style scoped>
 /* GENERAL CSS */
+/* As the project grows and these CSS classes can be reused on other pages, they will be moced to the global.css file */
 .register-page {
   min-height: 100vh;
   background-image: url("../assets/background.jpg");
@@ -104,12 +106,21 @@ export default {
   justify-content: space-around;
   margin: 1rem 0;
 }
+.row:last-child {
+  margin-bottom: 0;
+}
 .row.multiple div {
   max-width: calc(50% - .5rem);
 }
 .info-text {
   text-transform: uppercase;
   font-size: 0.8rem;
+}
+.back-btn {
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  cursor: pointer;
 }
 
 /* MOBILE CSS */
@@ -122,6 +133,9 @@ export default {
   }
   .row.multiple div {
     max-width: 50%;
+  }
+  .back-btn {
+    display: none;
   }
 }
 
@@ -141,7 +155,7 @@ export default {
   }
 }
 
-/* DESKTOP */
+/* LARGE DESKTOP */
 @media (min-width: 1367px) {
   @import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap");
 
@@ -152,6 +166,4 @@ export default {
   }
 }
 
-@media (min-width: 1200px) {
-}
 </style>

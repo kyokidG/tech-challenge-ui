@@ -1,4 +1,7 @@
-# tech-challenge-ui
+# Tech Challenge | UI Developer
+## by Brata George
+
+[Live Demo](https://condescending-euler-e4283a.netlify.com/)
 
 ## Project setup
 ```
